@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l
+ln -s /bin/ls /tmp/sys/__ls__
