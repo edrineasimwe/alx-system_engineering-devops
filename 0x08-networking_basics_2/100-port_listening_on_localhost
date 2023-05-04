@@ -5,7 +5,7 @@ touch hosts.new
 
 echo "127.0.0.2   localhost" >> hosts.new
 
-echo "$(cat hosts.new)" > /etc/hosts
+cp -f hosts.new /etc/hosts
 
 rm hosts.new
 
