@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#This script displays all active IPv4 IPs on this machine
+
+file="/etc/hosts"
+
+touch filework
+
+while read -r line; do
+
+    if [ -z "$line" ]
+    then
+        break
+    fi
+
+    echo "$line" >> filework
+
+        done <$file
+
+cut -f 1 filework
+
+rm filework
+

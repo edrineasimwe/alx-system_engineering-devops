@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script allows us change our IP addresses as required by the browser when making our own application
+
+touch hosts.new
+
+echo "127.0.0.0.1    localhost" >> hosts.new
+echo "8.8.8.8	     facebook" >> hosts.new
+
+echo "$(cat hosts.new)" > /etc/hosts
+
