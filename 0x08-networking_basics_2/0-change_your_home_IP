@@ -8,3 +8,4 @@ echo "8.8.8.8	     facebook" >> hosts.new
 
 echo "$(cat hosts.new)" > /etc/hosts
 
+rm hosts.new

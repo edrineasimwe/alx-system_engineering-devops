@@ -7,16 +7,14 @@ touch filework
 
 while read -r line; do
 
-    if [ -z "$line" ]
+    if [[ "$line" == *.*.*.* ]]
     then
-        break
+        echo "$line" >> filework
     fi
 
-    echo "$line" >> filework
+done <$file
 
-        done <$file
-
-cut -f 1 filework
+cut -f1 -d ' ' filework
 
 rm filework
 

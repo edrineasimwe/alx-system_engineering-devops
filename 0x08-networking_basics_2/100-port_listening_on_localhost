@@ -7,5 +7,7 @@ echo "127.0.0.2   localhost" >> hosts.new
 
 echo "$(cat hosts.new)" > /etc/hosts
 
-nc -lv localhost 98
+rm hosts.new
+
+nc -l localhost 98
 
