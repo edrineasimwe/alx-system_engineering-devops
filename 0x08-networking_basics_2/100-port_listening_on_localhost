@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This script starts up a server at localhost of the current machine listening on port 98
+
+nc -lv localhost 98
+
