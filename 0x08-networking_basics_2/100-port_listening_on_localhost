@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 #This script starts up a server at localhost of the current machine listening on port 98
 
+touch hosts.new
+
+echo "127.0.0.2   localhost" >> hosts.new
+
+echo "$(cat hosts.new)" > /etc/hosts
+
 nc -lv localhost 98
 
