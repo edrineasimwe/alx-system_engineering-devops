@@ -8,5 +8,5 @@ This module was all about thelooking into IP addresses and moving on to define t
 
 The files generated include:
 
-> "0-change\_your\_home\_IP"
-> "1-show\_attached\_IPs"
+> 0-change\_your\_home\_IP
+> 1-show\_attached\_IPs
