@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #This creates an ssh pair with defined parameters
-ssh-keygen -p betty -b 4096 -f schoo
-l
+ssh-keygen -p betty -b 4096 -f school
+
