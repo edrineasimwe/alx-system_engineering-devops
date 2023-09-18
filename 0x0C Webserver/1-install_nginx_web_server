@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#This is a script to configure the nginx server of a server machine
+ 
+sed -i -r -e 's/listen [0-9]+ default_server;/listen 80 default_server;/g' /etc/nginx/sites-enabled/default
+
+sed -i -r -e 's/listen .*:[0-9]+ default_server;/listen [::]:80 default_server;/g' /etc/nginx/sites-enabled/default
+
+echo "Hello World!" > /var/www/html/index.html
